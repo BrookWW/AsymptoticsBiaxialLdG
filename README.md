@@ -24,15 +24,16 @@ $`a=(a_2,a_4,a_6,a'_6)`$, let $`r_*>0`$ satisfy
 $`4a_6r_*^4+2a_4r_*^2=a_2`$. The nonnegative sextic potential $`f_b`$ has
 vacuum manifold $`\mathcal N=f_b^{-1}(0)`$, the orbit of
 $`\mathrm{diag}(r_*,-r_*,0)`$. Write $`t=\mathrm{tr}(Q^2)`$, $`s=\mathrm{tr}(Q^3)`$,
-and $`t_*=2r_*^2`$. For $`0<\varepsilon<1`$ the potential and energy are
+and $`t_*=2r_*^2`$. Put
+$`P(t)=-a_2t/2+a_4t^2/4+a_6t^3/6`$.
+For $`0<\varepsilon<1`$ the potential, energy density, and energy are
 
 ```math
-\begin{aligned}
-f_b(Q) &=-\tfrac{a_2}{2}(t-t_*)+\tfrac{a_4}{4}(t^2-t_*^2) \\
- &\quad+\tfrac{a_6}{6}(t^3-t_*^3)+\tfrac{a'_6}{6}s^2, \\
-e_\varepsilon(Q) &= \tfrac12|\nabla Q|^2+\varepsilon^{-2}f_b(Q), \\
-E_\varepsilon(Q;U) &= \int_U e_\varepsilon(Q)\,dx.
-\end{aligned}
+\begin{gathered}
+f_b(Q)=P(t)-P(t_*)+\tfrac{a'_6}{6}s^2, \\
+e_\varepsilon(Q)=\tfrac12|\nabla Q|^2+\varepsilon^{-2}f_b(Q), \\
+E_\varepsilon(Q;U)=\int_U e_\varepsilon(Q)\,dx.
+\end{gathered}
 ```
 
 In the statements below, local minimizers minimize on every ball compactly
@@ -43,7 +44,7 @@ ambient right-hand side
 
 ```math
 \begin{aligned}
-\mathcal H(Q,\nabla Q) &=-\frac{|\nabla Q|^2}{2r_*^2}Q \\
+\mathcal H(Q,\nabla Q)={}&-\frac{|\nabla Q|^2}{2r_*^2}Q \\
  &\quad-\frac{3\sum_j\mathrm{tr}((\partial_jQ)^2Q)}{r_*^4}K_Q.
 \end{aligned}
 ```
@@ -113,24 +114,24 @@ component $`T`$ are given by
 
 ```math
 \begin{aligned}
-t_1 &= -\frac{|\nabla q|^2}{4r_*^2(a_4+4a_6r_*^2)}, \\
-t_2 &= -\frac{\sum_j\mathrm{tr}((\partial_jq)^2q)}{a'_6r_*^4}, \\
-N &= \frac{t_1}{2r_*^2}q+\frac{3t_2}{2r_*^4}K_q, \\
-T &= p-N .
+t_1={}&-\frac{|\nabla q|^2}{4r_*^2(a_4+4a_6r_*^2)}, \\
+t_2={}&-\frac{\sum_j\mathrm{tr}((\partial_jq)^2q)}{a'_6r_*^4}, \\
+N={}&\frac{t_1}{2r_*^2}q+\frac{3t_2}{2r_*^4}K_q,\quad T=p-N.
 \end{aligned}
 ```
 
 With $`g_1=\sum_j\mathrm{tr}(\partial_jT\,\partial_jq)`$,
 $`g_2=\sum_j\mathrm{tr}(\partial_jT\,\partial_j(q^2))`$, and
-$`P_q^\top`$ the projection onto $`T_q\mathcal N`$, the tangential equation is
+$`P_q^\top`$ the projection onto $`T_q\mathcal N`$, write
+$`\mathrm{tf}(B)=B-\tfrac13\mathrm{tr}(B)I`$ for the trace-free part.
+The tangential equation is
 
 ```math
 \begin{aligned}
-\Delta T={}&-\frac{g_1}{r_*^2}q \\
- &-\frac{3(2g_2+\mathrm{tr}(T\Delta(q^2)))}{2r_*^4}K_q \\
+\Delta T={}&-\frac{g_1}{r_*^2}q
+ -\frac{3(2g_2+\mathrm{tr}(T\Delta(q^2)))}{2r_*^4}K_q \\
  &+(2a_4+8a_6r_*^2)t_1 T-P_q^\top\Delta N \\
- &+3a'_6t_2\left(qp+pq-\tfrac23 t_1 I\right) \\
- &-\frac{3a'_6t_2}{r_*^2}(t_2 q+t_1 K_q).
+ &+3a'_6t_2\left[\mathrm{tf}(qp+pq)-\frac{t_2q+t_1K_q}{r_*^2}\right].
 \end{aligned}
 ```
 
