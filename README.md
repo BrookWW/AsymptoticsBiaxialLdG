@@ -43,10 +43,7 @@ minimality, and convergence statements. Put $`K_Q=Q^2-\tfrac23r_*^2 I`$. The vac
 ambient right-hand side
 
 ```math
-\begin{aligned}
-\mathcal H(Q,\nabla Q)={}&-\frac{|\nabla Q|^2}{2r_*^2}Q \\
- &\quad-\frac{3\sum_j\mathrm{tr}((\partial_jQ)^2Q)}{r_*^4}K_Q.
-\end{aligned}
+\mathcal H(Q,\nabla Q)=-\tfrac{|\nabla Q|^2}{2r_*^2}Q-\tfrac{3\sum_j\mathrm{tr}((\partial_jQ)^2Q)}{r_*^4}K_Q.
 ```
 
 [Bulk potential](Thesis/Model.lean#L69) · [Energy and minimality](Thesis/Definitions.lean#L83) · [Harmonic-map equation](Thesis/Definitions.lean#L116)
@@ -114,9 +111,9 @@ component $`T`$ are given by
 
 ```math
 \begin{aligned}
-t_1={}&-\frac{|\nabla q|^2}{4r_*^2(a_4+4a_6r_*^2)}, \\
-t_2={}&-\frac{\sum_j\mathrm{tr}((\partial_jq)^2q)}{a'_6r_*^4}, \\
-N={}&\frac{t_1}{2r_*^2}q+\frac{3t_2}{2r_*^4}K_q,\quad T=p-N.
+&t_1=-\frac{|\nabla q|^2}{4r_*^2(a_4+4a_6r_*^2)}, \\
+&t_2=-\frac{\sum_j\mathrm{tr}((\partial_jq)^2q)}{a'_6r_*^4}, \\
+&N=\frac{t_1}{2r_*^2}q+\frac{3t_2}{2r_*^4}K_q,\quad T=p-N.
 \end{aligned}
 ```
 
@@ -129,10 +126,9 @@ The tangential equation is
 
 ```math
 \begin{aligned}
-\Delta T={}&-\frac{g_1}{r_*^2}q
- -\frac{3(2g_2+h)}{2r_*^4}K_q \\
- &+(2a_4+8a_6r_*^2)t_1 T-P_q^\top\Delta N \\
- &+3a'_6t_2\left[\mathrm{tf}(qp+pq)-\frac{t_2q+t_1K_q}{r_*^2}\right].
+&\Delta T=-\frac{g_1}{r_*^2}q-\frac{3(2g_2+h)}{2r_*^4}K_q \\
+ &\quad+(2a_4+8a_6r_*^2)t_1 T-P_q^\top\Delta N \\
+ &\quad+3a'_6t_2\bigl[\mathrm{tf}(qp+pq)-\tfrac{t_2q+t_1K_q}{r_*^2}\bigr].
 \end{aligned}
 ```
 
