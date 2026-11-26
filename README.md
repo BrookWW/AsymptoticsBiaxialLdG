@@ -120,8 +120,9 @@ N={}&\frac{t_1}{2r_*^2}q+\frac{3t_2}{2r_*^4}K_q,\quad T=p-N.
 \end{aligned}
 ```
 
-With $`g_1=\sum_j\mathrm{tr}(\partial_jT\,\partial_jq)`$,
+Put $`g_1=\sum_j\mathrm{tr}(\partial_jT\,\partial_jq)`$,
 $`g_2=\sum_j\mathrm{tr}(\partial_jT\,\partial_j(q^2))`$, and
+$`h=\mathrm{tr}(T\Delta(q^2))`$. With
 $`P_q^\top`$ the projection onto $`T_q\mathcal N`$, write
 $`\mathrm{tf}(B)=B-\tfrac13\mathrm{tr}(B)I`$ for the trace-free part.
 The tangential equation is
@@ -129,7 +130,7 @@ The tangential equation is
 ```math
 \begin{aligned}
 \Delta T={}&-\frac{g_1}{r_*^2}q
- -\frac{3(2g_2+\mathrm{tr}(T\Delta(q^2)))}{2r_*^4}K_q \\
+ -\frac{3(2g_2+h)}{2r_*^4}K_q \\
  &+(2a_4+8a_6r_*^2)t_1 T-P_q^\top\Delta N \\
  &+3a'_6t_2\left[\mathrm{tf}(qp+pq)-\frac{t_2q+t_1K_q}{r_*^2}\right].
 \end{aligned}
