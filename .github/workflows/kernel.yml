@@ -1,0 +1,17 @@
+name: Kernel replay
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kernel:
+    uses: ./.github/workflows/build.yml
+    with:
+      kernel_replay: true

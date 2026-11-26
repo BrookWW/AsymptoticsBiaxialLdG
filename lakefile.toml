@@ -1,0 +1,59 @@
+name = "AsymptoticsBiaxialLdG"
+defaultTargets = ["Thesis"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "905b95818eb32af7874a58b427f50c1711a5e96c"
+
+[[require]]
+name = "stratificationTheory"
+git = "https://github.com/BrookWW/StratificationTheoryMinimizingHarmonicMapsFormalization.git"
+rev = "ec9a869bad0457e931523ef5ef6d096d30602b75"
+
+[[lean_lib]]
+name = "Thesis"
+
+[[lean_lib]]
+name = "SupportingAnalysis"
+globs = [
+  "SupportingAnalysis.Basics",
+  "SupportingAnalysis.Calculus.ChainRule",
+  "SupportingAnalysis.Calculus.LineDerivatives",
+  "SupportingAnalysis.Calculus.RealLine",
+  "SupportingAnalysis.Euclidean",
+  "SupportingAnalysis.MeanValue.Estimate",
+  "SupportingAnalysis.MeanValue.ExponentialLift",
+  "SupportingAnalysis.MeanValue.Subharmonic",
+  "SupportingAnalysis.Measure.ChartDensity",
+  "SupportingAnalysis.Measure.ChartLimits",
+  "SupportingAnalysis.Measure.Charts",
+  "SupportingAnalysis.Measure.Covering",
+  "SupportingAnalysis.Measure.Differentiation",
+  "SupportingAnalysis.Measure.Rescaling",
+  "SupportingAnalysis.Measure.Scaling",
+  "SupportingAnalysis.Measure.TangentGluing",
+  "SupportingAnalysis.Measure.Tangents",
+  "SupportingAnalysis.Poisson.Convolution",
+  "SupportingAnalysis.Poisson.ConvolutionScaling",
+  "SupportingAnalysis.Poisson.Decomposition",
+  "SupportingAnalysis.Poisson.Derivatives",
+  "SupportingAnalysis.Poisson.Equation",
+  "SupportingAnalysis.Poisson.Fourier",
+  "SupportingAnalysis.Poisson.FundamentalSolution",
+  "SupportingAnalysis.Poisson.Gradient",
+  "SupportingAnalysis.Poisson.KernelBound",
+  "SupportingAnalysis.Poisson.Limits",
+  "SupportingAnalysis.Poisson.LineKernel",
+  "SupportingAnalysis.Poisson.Plancherel",
+  "SupportingAnalysis.Poisson.Potential",
+  "SupportingAnalysis.Poisson.PublicEstimates",
+  "SupportingAnalysis.Poisson.RadialAverage",
+  "SupportingAnalysis.Poisson.Regularization",
+  "SupportingAnalysis.Poisson.Smoothing",
+  "SupportingAnalysis.Poisson.SquareBound",
+  "SupportingAnalysis.Poisson.WeakBound",
+]
